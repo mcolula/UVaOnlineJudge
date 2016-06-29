@@ -18,7 +18,7 @@ double probability(int idx, int num) {
   if (num + 1 <= K)
     ans += probability(idx + 1, num + 1) / (K + 1.0);
   if (num - 1 >= 0)
-    ans += probability(idx + 1, num - 1) / (K + 1.0);
+    ans += probability(idx + 1, num + 1) / (K + 1.0);
   test[idx][num] = T;
   return memo[idx][num] = ans;
 }
