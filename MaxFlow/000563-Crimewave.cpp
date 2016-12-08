@@ -60,7 +60,7 @@ struct FlowNetwork {
 #define nxt(i, j) cur(n + i, j)
 
 int main() {
-  ios::sync_with_stdio(0); cin.tie(0);
+  ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
   int n, m;
   int u, v;
   int k, t;
@@ -70,8 +70,8 @@ int main() {
     cin >> m;
     cin >> k;
     int s = 2 * n * m;
-    int t = s + 1 + 0;
-    FlowNetwork net(A);
+    int t = 2 * n * m + 1;
+    FlowNetwork net(t + 1);
     for (int i = 0; i < n; i++) {
       for (int j = 0; j < m; j++) {
         if (i == 0 || i + 1 == n || j == 0 || j + 1 == m)
