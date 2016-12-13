@@ -19,7 +19,6 @@ int dis[A][B];
 int cst[A];
 vv  graph ;
 
-
 void shortestPath(int s, int c) {
   priority_queue<p3i> q;
   pii p = pii(0, s);
@@ -50,11 +49,8 @@ void shortestPath(int s, int c) {
 
 int main() {
   ios::sync_with_stdio(0); cin.tie(0);
-  int n, m;
-  int u, v;
-  int w, q;
-  int c, d;
-  int s, t;
+  int n, m, u, v, w;
+  int q, c, d, s, t;
   cin >> n;
   cin >> m;
   graph  = vv(n);
