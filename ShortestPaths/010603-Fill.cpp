@@ -7,10 +7,6 @@
   typedef pair<int, int> pii;
   typedef pair<pii, pii> p4i;
 
-  typedef vector<int> vi;
-  typedef vector<pii> vp;
-  typedef vector<vp > vv;
-
   #define snd second
   #define fst first
 
