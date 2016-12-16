@@ -61,8 +61,8 @@ int main() {
       cin >> s >> t >> w;
       int a = id(s);
       int b = id(t);
-      graph[a].push_back(p3i(b ,pii(w[0] - 'a', w.size())));
-      graph[b].push_back(p3i(a ,pii(w[0] - 'a', w.size())));
+      graph[a].add(p3i(b ,pii(w[0] - 'a', w.size())));
+      graph[b].add(p3i(a ,pii(w[0] - 'a', w.size())));
     }
     for (int i = 0; i < A; i++)
       fill(dis[i], dis[i] + z.size() + 5, X);
