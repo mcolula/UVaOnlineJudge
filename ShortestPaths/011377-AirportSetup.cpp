@@ -53,8 +53,8 @@ int main() {
       cin >> x, has[x] = 1;
     for (int i = 0; i <  m; i++) {
       cin >> u >> v;
-      graph[u].push_back(pii(v, !has[v]));
-      graph[v].push_back(pii(u, !has[u]));
+      graph[u].add(pii(v, !has[v]));
+      graph[v].add(pii(u, !has[u]));
     }
     cout << "Case " << T << ":\n";
     cin  >> q;
